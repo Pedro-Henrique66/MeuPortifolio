@@ -183,14 +183,14 @@ font-size: 60px;
 
 .botao3 {
     background-color: #000;
-    color: #f500c4;
+    color: #333;
     width: 500px;
     height: 80px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #ff00ee;
+    border: 2px solid #333;
     border-radius: 50px;
     font-size: 36px;
     padding: 15px 0;
@@ -209,7 +209,7 @@ font-size: 60px;
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, transparent, #ee05fa);
+    background: linear-gradient(45deg, transparent, #333);
     transition: 0.5s;
 }
 
@@ -325,3 +325,66 @@ font-size: 60px;
 }
 
 /* fim botao5 */
+
+/* imagem */
+
+.imagem{
+
+max-width: 100%;
+width: 650px;
+height: 650px;
+text-align: center;
+align-items: center;
+border-radius: 10px;
+box-shadow: 0px 0px 20px rgba(rgba(0, 255, 26, 0.347), green, rgba(30, 255, 0, 0.288), alpha);
+transition: transform 0.3;
+position: relative;
+overflow: hidden;
+order: 1;
+margin-bottom: 80px;
+
+}
+
+.imagem.img {
+
+object-fit: cover;
+display: block;
+width: 100%;
+height: 100%;
+
+}
+
+.imagem::before,
+.imagem::after {
+    
+content: "";
+position: absolute;
+width: 10px;
+height: 10px;
+border: 2px solid #ff5500;
+background-color: transparent;
+   
+}
+
+.imagem::before{
+
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius: 10px;
+    border-width: 2px 0 0 2px;
+}
+
+.imagem::after {
+
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius: 10px;
+    border-width: 0 2px 2px 0;
+}
+
+.imagem:hover{
+
+transform: scale(1.1);
+
+}
+
